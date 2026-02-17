@@ -1,0 +1,142 @@
+.marquee-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 3rem 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-title {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  margin-top: 0;
+}
+
+.marquee-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 2rem;
+  animation: scroll-left 30s linear infinite;
+  padding: 1.5rem 0;
+  min-width: max-content;
+  align-items: center;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.company-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  white-space: nowrap;
+  padding: 0 1.5rem;
+  min-width: max-content;
+  transition: transform 0.3s ease;
+}
+
+.company-item:hover {
+  transform: scale(1.1);
+}
+
+.company-logo {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.company-name {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .marquee-section {
+    padding: 2rem 1rem;
+  }
+
+  .marquee-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .marquee-content {
+    gap: 1.5rem;
+  }
+
+  .company-item {
+    padding: 0 1rem;
+  }
+
+  .company-logo {
+    font-size: 2rem;
+  }
+
+  .company-name {
+    font-size: 0.95rem;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-section {
+    padding: 1.5rem 0.8rem;
+  }
+
+  .marquee-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .marquee-content {
+    gap: 1rem;
+    animation: scroll-left 20s linear infinite;
+  }
+
+  .company-item {
+    padding: 0 0.8rem;
+  }
+
+  .company-logo {
+    font-size: 1.6rem;
+  }
+
+  .company-name {
+    font-size: 0.85rem;
+  }
+}
