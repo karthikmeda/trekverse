@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/trekverse/static/css/main.3ba0150f.css",
+    "main.js": "/trekverse/static/js/main.5fd54cb4.js",
+    "static/js/453.03c97516.chunk.js": "/trekverse/static/js/453.03c97516.chunk.js",
+    "static/media/Untitled design logo.png": "/trekverse/static/media/Untitled design logo.e40fd76a4ac0dab15d87.png",
+    "index.html": "/trekverse/index.html",
+    "main.3ba0150f.css.map": "/trekverse/static/css/main.3ba0150f.css.map",
+    "main.5fd54cb4.js.map": "/trekverse/static/js/main.5fd54cb4.js.map",
+    "453.03c97516.chunk.js.map": "/trekverse/static/js/453.03c97516.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ba0150f.css",
+    "static/js/main.5fd54cb4.js"
+  ]
+}
