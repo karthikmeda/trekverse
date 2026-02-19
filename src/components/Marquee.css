@@ -1,5 +1,5 @@
 .marquee-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
   padding: 3rem 1.5rem;
   overflow: hidden;
   position: relative;
@@ -18,9 +18,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  border: none;
 }
 
 .marquee {
@@ -30,11 +29,12 @@
 
 .marquee-content {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   animation: scroll-left 30s linear infinite;
-  padding: 1.5rem 0;
+  padding: 1.5rem;
   min-width: max-content;
   align-items: center;
+  justify-content: center;
 }
 
 @keyframes scroll-left {
@@ -53,15 +53,21 @@
 .company-item {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.8rem;
   white-space: nowrap;
-  padding: 0 1.5rem;
+  padding: 1.2rem 1.8rem;
   min-width: max-content;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
 }
 
 .company-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .company-logo {
@@ -69,11 +75,19 @@
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
+.company-logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
 .company-name {
-  color: white;
+  color: #2c3e50;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 /* Responsive Design */

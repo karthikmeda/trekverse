@@ -25,7 +25,7 @@
 }
 
 .hero-title .highlight {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -39,7 +39,7 @@
 }
 
 .explore-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
   color: white;
   border: none;
   padding: 1rem 2.5rem;
@@ -51,12 +51,12 @@
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
-  box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 10px 30px rgba(26, 188, 156, 0.4);
 }
 
 .explore-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+  box-shadow: 0 15px 40px rgba(26, 188, 156, 0.6);
 }
 
 .explore-btn:active {
@@ -90,7 +90,7 @@
 .shape-1 {
   width: 300px;
   height: 300px;
-  background: #667eea;
+  background: #1abc9c;
   top: -50px;
   right: -50px;
   animation: float 8s ease-in-out infinite;
@@ -99,7 +99,7 @@
 .shape-2 {
   width: 200px;
   height: 200px;
-  background: #764ba2;
+  background: #16a085;
   bottom: -30px;
   left: 10%;
   animation: float 10s ease-in-out infinite 1s;
@@ -108,7 +108,7 @@
 .shape-3 {
   width: 250px;
   height: 250px;
-  background: #667eea;
+  background: #1abc9c;
   bottom: 50px;
   right: 10%;
   animation: float 12s ease-in-out infinite 2s;

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import logo from '../utility/Untitled design logo.png';
+import logo from '../utility/mainLogo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -12,25 +12,22 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="footer-section brand-section">
             <div className="footer-logo-section">
-              <img src={logo} alt="Trekverse" className="footer-logo" />
-              <h3 className="footer-brand">Trekverse</h3>
+              <img src={logo} alt="TrekVerse" className="footer-logo" />
+              <h3 className="footer-brand">TrekVerse</h3>
             </div>
             <p className="footer-description">
               Empowering professionals across Tech, Electronics, Management & Civil domains with
               industry-leading programs and placement opportunities.
             </p>
             <div className="social-links">
-              <a href="#" className="social-link" title="Facebook">
-                📘
+              <a href="https://www.instagram.com/trekverse_/" className="social-link" title="Instagram" target="_blank" rel="noopener noreferrer">
+                📷
               </a>
-              <a href="#" className="social-link" title="Twitter">
-                🐦
-              </a>
-              <a href="#" className="social-link" title="LinkedIn">
+              <a href="https://www.linkedin.com/in/trekverse" className="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
                 💼
               </a>
-              <a href="#" className="social-link" title="Instagram">
-                📷
+              <a href="mailto:trekverse5@gmail.com" className="social-link" title="Email">
+                📧
               </a>
             </div>
           </div>
@@ -79,15 +76,11 @@ const Footer = () => {
             <div className="contact-info">
               <div className="contact-item">
                 <span className="contact-icon">📧</span>
-                <a href="mailto:info@trekverse.com">info@trekverse.com</a>
+                <a href="mailto:trekverse5@gmail.com">trekverse5@gmail.com</a>
               </div>
               <div className="contact-item">
                 <span className="contact-icon">📱</span>
-                <a href="tel:+919999999999">+91 9999 9999 99</a>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon">📍</span>
-                <span>Global Education Platform</span>
+                <a href="tel:6304558176">6304558176</a>
               </div>
             </div>
           </div>
@@ -96,7 +89,7 @@ const Footer = () => {
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <p className="footer-text">
-            &copy; {currentYear} <span className="highlight">Trekverse</span>. All rights reserved.
+            &copy; {currentYear} <span className="highlight">TrekVerse</span>. All rights reserved.
           </p>
           <div className="footer-bottom-links">
             <a href="#privacy">Privacy Policy</a>

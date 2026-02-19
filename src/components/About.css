@@ -1,0 +1,266 @@
+.about-section {
+  background: linear-gradient(135deg, rgba(26, 188, 156, 0.08), rgba(22, 160, 133, 0.08));
+  padding: 4rem 2rem;
+  margin: 3rem 0;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-title {
+  color: #1abc9c;
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.about-description {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.about-stands-for {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 5px solid #1abc9c;
+}
+
+.about-stands-for h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin: 0 0 1.5rem 0;
+  font-weight: 600;
+}
+
+.stands-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.stand-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.stand-letter {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1abc9c;
+  letter-spacing: 2px;
+}
+
+.stand-description {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.stand-tagline {
+  background: linear-gradient(135deg, rgba(26, 188, 156, 0.1), rgba(22, 160, 133, 0.1));
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border-top: 2px solid #1abc9c;
+}
+
+.stand-tagline p {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+  margin: 0 0 0.8rem 0;
+}
+
+.stand-tagline h4 {
+  color: #1abc9c;
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.about-features {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 5px solid #16a085;
+}
+
+.about-features h3 {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin: 0 0 1.5rem 0;
+  font-weight: 600;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.features-list li {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-left: 0;
+}
+
+.about-visual {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.visual-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border-top: 4px solid #1abc9c;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.visual-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(26, 188, 156, 0.15);
+}
+
+.visual-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.visual-box p {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-visual {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 3rem 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .stands-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .about-stands-for {
+    padding: 1.5rem;
+  }
+
+  .about-stands-for h3 {
+    font-size: 1.2rem;
+  }
+
+  .about-visual {
+    grid-template-columns: 1fr;
+  }
+
+  .visual-box {
+    padding: 1.5rem;
+  }
+
+  .visual-icon {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 2rem 1rem;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+
+  .about-stands-for {
+    padding: 1rem;
+  }
+
+  .about-stands-for h3,
+  .about-features h3 {
+    font-size: 1.1rem;
+  }
+
+  .stand-letter {
+    font-size: 1.5rem;
+  }
+
+  .stand-description {
+    font-size: 0.9rem;
+  }
+
+  .features-list li {
+    font-size: 0.95rem;
+  }
+
+  .visual-box {
+    padding: 1rem;
+  }
+
+  .visual-icon {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .visual-box p {
+    font-size: 1rem;
+  }
+}

@@ -6,7 +6,7 @@ const Hero = ({ onExplore }) => {
     <section className="hero">
       <div className="hero-content">
         <h1 className="hero-title">
-          Transform Your <span className="highlight">Career</span> with Trekverse
+          Transform Your <span className="highlight">Career</span> with TrekVerse
         </h1>
         <p className="hero-subtitle">
           Explore industry-leading programs across Tech, Electronics, Management & Civil domains.

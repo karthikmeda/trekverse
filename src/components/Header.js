@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import logo from '../utility/Untitled design logo.png';
+import logo from '../utility/mainLogo.png';
 
 const Header = ({ onNavigate }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -19,8 +19,8 @@ const Header = ({ onNavigate }) => {
       <div className="header-container">
         {/* Logo Section */}
         <div className="logo-section">
-          <img src={logo} alt="Trekverse Logo" className="logo" />
-          <span className="logo-text">Trekverse</span>
+          <img src={logo} alt="TrekVerse Logo" className="logo" />
+          <span className="logo-text">TrekVerse</span>
         </div>
 
         {/* Navigation */}

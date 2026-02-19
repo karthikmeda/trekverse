@@ -7,138 +7,314 @@ export const CATEGORIES = [
 ];
 
 export const PROGRAMS = [
-  // Tech Programs
   {
     id: 1,
-    name: 'AI & Machine Learning',
+    name: 'Python Programming',
     category: 'tech',
-    duration: '6 months',
-    level: 'Advanced',
-    description: 'Master AI and ML algorithms, neural networks, and real-world applications.',
-    students: '2,450+'
+    duration: '3 months',
+    level: 'Beginner to Advanced',
+    description: 'Comprehensive Python programming from basics to advanced concepts.',
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course on Python programming covering fundamentals, OOP, advanced concepts, libraries, and practical projects for professional development.',
+    curriculum: [
+      { module: 'Introduction to Python', topics: ['Overview of Python', 'Python Development Environment'] },
+      { module: 'Python Basics and Syntax', topics: ['Basic Syntax', 'Working with Functions and Modules'] },
+      { module: 'Data Structures in Python', topics: ['Core Data Structures', 'Advanced Data Structures'] },
+      { module: 'Object-Oriented Programming', topics: ['Classes and Objects', 'Advanced OOP Concepts'] },
+      { module: 'Exception Handling and File I/O', topics: ['Exception Handling', 'File Handling'] },
+      { module: 'Python Libraries and Modules', topics: ['Standard Libraries', 'Popular Third-Party Libraries'] },
+      { module: 'Web Development with Python', topics: ['Flask Basics', 'Django Basics'] },
+      { module: 'Data Science and Automation', topics: ['Data Analysis', 'Automation and Scripting'] },
+      { module: 'Advanced Python Concepts', topics: ['Decorators and Generators', 'Concurrency and Multithreading'] },
+      { module: 'Capstone Project', topics: ['Project Planning', 'Project Implementation'] }
+    ]
   },
   {
     id: 2,
     name: 'Data Science',
     category: 'tech',
-    duration: '4 months',
-    level: 'Intermediate',
+    duration: '3 months',
+    level: 'Beginner to Advanced',
     description: 'Learn data analysis, visualization, and predictive modeling.',
-    students: '1,890+'
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'Master data analysis, visualization, and machine learning to build real-world data science projects and launch your career in data science.',
+    curriculum: [
+      { module: 'Python for Data Science', topics: ['Python Basics', 'Control Flow', 'Data Structures'] },
+      { module: 'Data Analysis with Pandas & NumPy', topics: ['DataFrames & Series', 'Data Cleaning', 'Aggregations'] },
+      { module: 'Data Visualization', topics: ['Matplotlib & Seaborn', 'Custom Plots', 'Plotly Dashboards'] },
+      { module: 'Machine Learning Basics', topics: ['Supervised vs Unsupervised', 'Scikit-learn', 'Model Evaluation'] },
+      { module: 'Databases & SQL', topics: ['SQL Queries', 'Database Connections', 'Data Retrieval'] },
+      { module: 'Deployment & Projects', topics: ['Streamlit Apps', 'Git & Version Control', 'Deployment'] },
+      { module: 'Career Readiness', topics: ['Portfolio Projects', 'Interview Prep', 'Placement Support'] }
+    ]
   },
   {
     id: 3,
     name: 'Web Development',
     category: 'tech',
     duration: '3 months',
-    level: 'Beginner',
+    level: 'Beginner to Advanced',
     description: 'Build modern web applications with React, Node.js, and databases.',
-    students: '3,200+'
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course on web development covering frontend, backend, databases, deployment, and modern frameworks for building responsive web applications.',
+    curriculum: [
+      { module: 'Introduction to Web Development', topics: ['Web Basics', 'Development Tools'] },
+      { module: 'HTML and CSS', topics: ['HTML Basics', 'CSS Basics'] },
+      { module: 'JavaScript Fundamentals', topics: ['JavaScript Basics', 'Advanced JavaScript'] },
+      { module: 'Frontend Frameworks', topics: ['React Basics', 'Advanced React'] },
+      { module: 'Backend Development', topics: ['Node.js and Express', 'Database Integration'] },
+      { module: 'Authentication and Security', topics: ['User Authentication', 'Security'] },
+      { module: 'Deployment and Hosting', topics: ['Deployment Basics', 'Advanced Hosting'] },
+      { module: 'Testing and Performance', topics: ['Testing', 'Performance'] },
+      { module: 'Advanced Topics', topics: ['Progressive Web Apps', 'WebSockets'] },
+      { module: 'Capstone Project', topics: ['Planning', 'Implementation'] }
+    ]
   },
   {
     id: 4,
-    name: 'Python Programming',
-    category: 'tech',
-    duration: '2 months',
-    level: 'Beginner',
-    description: 'Comprehensive Python programming from basics to advanced concepts.',
-    students: '2,100+'
-  },
-  {
-    id: 5,
     name: 'Java Programming',
     category: 'tech',
     duration: '3 months',
-    level: 'Intermediate',
+    level: 'Beginner to Advanced',
     description: 'Master Java for enterprise application development.',
-    students: '1,650+'
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course on Java covering fundamentals, object-oriented programming, advanced concepts, frameworks, and best practices.',
+    curriculum: [
+      { module: 'Introduction to Java', topics: ['Java Basics', 'Development Environment'] },
+      { module: 'Java Basics and Syntax', topics: ['Basic Syntax', 'Methods and Arrays'] },
+      { module: 'Object-Oriented Programming', topics: ['Classes and Objects', 'Advanced OOP'] },
+      { module: 'Exception Handling and File I/O', topics: ['Exception Handling', 'File IO'] },
+      { module: 'Collections and Generics', topics: ['Collections Framework', 'Generics'] },
+      { module: 'Multithreading', topics: ['Threads Basics', 'Synchronization'] },
+      { module: 'Java GUI', topics: ['Swing Basics', 'Advanced GUI'] },
+      { module: 'Networking and Databases', topics: ['Networking', 'Database'] },
+      { module: 'Advanced Java', topics: ['Java 8+', 'Design Patterns'] },
+      { module: 'Capstone', topics: ['Planning', 'Implementation'] }
+    ]
+  },
+  {
+    id: 5,
+    name: 'DevOps',
+    category: 'tech',
+    duration: '3 months',
+    level: 'Beginner to Advanced',
+    description: 'Learn Docker, Kubernetes, CI/CD pipelines, and cloud deployment.',
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course on DevOps covering CI/CD, containerization, cloud platforms, automation, monitoring, and best practices.',
+    curriculum: [
+      { module: 'Introduction to DevOps', topics: ['DevOps Overview', 'Culture'] },
+      { module: 'Version Control', topics: ['Git Basics', 'Advanced Git'] },
+      { module: 'CI/CD Fundamentals', topics: ['Concepts', 'Tools'] },
+      { module: 'Configuration Management', topics: ['IaC', 'Environment'] },
+      { module: 'Containerization', topics: ['Docker', 'Kubernetes'] },
+      { module: 'Cloud Platforms', topics: ['Basics', 'Integration'] },
+      { module: 'Monitoring', topics: ['Tools', 'Analysis'] },
+      { module: 'Security', topics: ['DevSecOps', 'Practices'] },
+      { module: 'Automation', topics: ['Scripting', 'Tools'] },
+      { module: 'Capstone', topics: ['Planning', 'Implementation'] }
+    ]
   },
   {
     id: 6,
-    name: 'DevOps Engineering',
+    name: 'Cloud Computing',
     category: 'tech',
-    duration: '5 months',
-    level: 'Advanced',
-    description: 'Learn Docker, Kubernetes, CI/CD pipelines, and cloud deployment.',
-    students: '890+'
+    duration: '3 months',
+    level: 'Beginner to Advanced',
+    description: 'Master cloud platforms, security, and deployment strategies.',
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course on cloud computing covering fundamentals, platforms, security, and real-world applications.',
+    curriculum: [
+      { module: 'Cloud Basics', topics: ['Fundamentals', 'Service Models'] },
+      { module: 'Deployment Models', topics: ['Types', 'Virtualization'] },
+      { module: 'Cloud Platforms', topics: ['AWS', 'Azure & Google Cloud'] },
+      { module: 'Storage & Databases', topics: ['Storage', 'Databases'] },
+      { module: 'Cloud Networking', topics: ['Networking', 'Security'] },
+      { module: 'Security & Compliance', topics: ['Security', 'Compliance'] },
+      { module: 'Automation', topics: ['IaC', 'CI/CD'] },
+      { module: 'Serverless', topics: ['Computing', 'Microservices'] },
+      { module: 'Monitoring', topics: ['Resources', 'Cost Management'] },
+      { module: 'Capstone', topics: ['Planning', 'Implementation'] }
+    ]
   },
-
-  // Electronics Programs
   {
     id: 7,
-    name: 'VLSI Design',
+    name: 'Embedded Systems',
     category: 'electronics',
-    duration: '6 months',
-    level: 'Advanced',
-    description: 'Very Large Scale Integration design and semiconductor concepts.',
-    students: '450+'
+    duration: '3 months',
+    level: 'Beginner to Advanced',
+    description: 'Microcontrollers, firmware development, and IoT applications.',
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course on embedded systems covering microcontrollers, RTOS, and real-world applications.',
+    curriculum: [
+      { module: 'Introduction', topics: ['Basics', 'Architecture'] },
+      { module: 'Microcontrollers', topics: ['Basics', 'Development Tools'] },
+      { module: 'Embedded C', topics: ['Programming', 'Advanced'] },
+      { module: 'Interfacing', topics: ['Sensors', 'Actuators'] },
+      { module: 'Real-Time OS', topics: ['RTOS Basics', 'Implementation'] },
+      { module: 'Communication', topics: ['Wired', 'Wireless'] },
+      { module: 'Design & Testing', topics: ['Design', 'Testing'] },
+      { module: 'Applications', topics: ['IoT', 'Robotics'] },
+      { module: 'Advanced', topics: ['Low-Power', 'Security'] },
+      { module: 'Capstone', topics: ['Planning', 'Implementation'] }
+    ]
   },
   {
     id: 8,
-    name: 'Embedded Systems',
+    name: 'VLSI Design',
     category: 'electronics',
-    duration: '4 months',
-    level: 'Intermediate',
-    description: 'Microcontrollers, firmware development, and IoT applications.',
-    students: '680+'
+    duration: '3 months',
+    level: 'Beginner to Advanced',
+    description: 'Very Large Scale Integration design and semiconductor concepts.',
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course on VLSI covering digital and analog design, HDL, verification, and modern VLSI applications.',
+    curriculum: [
+      { module: 'VLSI Basics', topics: ['Basics', 'Design Flow'] },
+      { module: 'CMOS Technology', topics: ['Devices', 'Fabrication'] },
+      { module: 'Digital Design', topics: ['Combinational', 'Sequential'] },
+      { module: 'HDL Programming', topics: ['VHDL', 'Verilog'] },
+      { module: 'Analog Design', topics: ['Circuits', 'Mixed-Signal'] },
+      { module: 'FPGA & ASIC', topics: ['FPGA', 'ASIC'] },
+      { module: 'Timing & Power', topics: ['Timing', 'Power'] },
+      { module: 'Testing', topics: ['Verification', 'Techniques'] },
+      { module: 'Trends', topics: ['Advanced Topics', 'EDA Tools'] },
+      { module: 'Capstone', topics: ['Planning', 'Implementation'] }
+    ]
   },
   {
     id: 9,
-    name: 'Electronics Fundamentals',
-    category: 'electronics',
-    duration: '2 months',
-    level: 'Beginner',
-    description: 'Basics of circuits, semiconductors, and electrical components.',
-    students: '920+'
-  },
-
-  // Management Programs
-  {
-    id: 10,
     name: 'Human Resources',
     category: 'management',
     duration: '3 months',
-    level: 'Intermediate',
+    level: 'Beginner to Advanced',
     description: 'HR management, recruitment strategies, and employee relations.',
-    students: '1,200+'
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course covering HRM principles, recruitment, development, and strategic HR practices.',
+    curriculum: [
+      { module: 'Introduction to HRM', topics: ['Fundamentals', 'Functions'] },
+      { module: 'Recruitment', topics: ['Process', 'Selection'] },
+      { module: 'Training', topics: ['Analysis', 'Development'] },
+      { module: 'Performance', topics: ['Appraisal', 'Engagement'] },
+      { module: 'Compensation', topics: ['Management', 'Benefits'] },
+      { module: 'Labor Laws', topics: ['Laws', 'Policies'] },
+      { module: 'HR Analytics', topics: ['Analytics', 'Technology'] },
+      { module: 'Relations', topics: ['Employee Relations', 'Conflicts'] },
+      { module: 'Strategic HR', topics: ['Planning', 'Global'] },
+      { module: 'Capstone', topics: ['Planning', 'Implementation'] }
+    ]
+  },
+  {
+    id: 10,
+    name: 'Finance & Accounting',
+    category: 'management',
+    duration: '3 months',
+    level: 'Beginner to Advanced',
+    description: 'Financial analysis, accounting principles, and investment management.',
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course covering finance, accounting, investment analysis, and financial planning.',
+    curriculum: [
+      { module: 'Finance Basics', topics: ['Fundamentals', 'Systems'] },
+      { module: 'Accounting', topics: ['Basics', 'Financial Statements'] },
+      { module: 'Corporate Finance', topics: ['Fundamentals', 'Planning'] },
+      { module: 'Investment', topics: ['Basics', 'Portfolio'] },
+      { module: 'Markets', topics: ['Markets', 'Instruments'] },
+      { module: 'Risk Management', topics: ['Risk', 'Insurance'] },
+      { module: 'Taxation', topics: ['Basics', 'Compliance'] },
+      { module: 'FinTech', topics: ['Innovations', 'Tools'] },
+      { module: 'Personal Finance', topics: ['Planning', 'Wealth'] },
+      { module: 'Capstone', topics: ['Planning', 'Implementation'] }
+    ]
   },
   {
     id: 11,
-    name: 'Finance & Accounting',
+    name: 'Digital Marketing',
     category: 'management',
-    duration: '4 months',
-    level: 'Intermediate',
-    description: 'Financial analysis, accounting principles, and investment management.',
-    students: '1,050+'
+    duration: '3 months',
+    level: 'Beginner to Advanced',
+    description: 'Digital marketing, branding, and campaign management strategies.',
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course on digital marketing strategies, SEO, social media, analytics, and emerging trends.',
+    curriculum: [
+      { module: 'Introduction', topics: ['Fundamentals', 'Channels'] },
+      { module: 'SEO', topics: ['On-Page', 'Off-Page'] },
+      { module: 'Paid Ads', topics: ['Google Ads', 'Social Media'] },
+      { module: 'Social Media', topics: ['Platforms', 'Growth'] },
+      { module: 'Content Marketing', topics: ['Creation', 'Distribution'] },
+      { module: 'Email Marketing', topics: ['Basics', 'Automation'] },
+      { module: 'Analytics', topics: ['Website', 'Metrics'] },
+      { module: 'Influencer', topics: ['Affiliate', 'Influencers'] },
+      { module: 'Trends', topics: ['Latest', 'Tools'] },
+      { module: 'Capstone', topics: ['Planning', 'Execution'] }
+    ]
   },
   {
     id: 12,
-    name: 'Marketing Strategy',
-    category: 'management',
-    duration: '3 months',
-    level: 'Beginner',
-    description: 'Digital marketing, branding, and campaign management.',
-    students: '1,450+'
-  },
-
-  // Civil Programs
-  {
-    id: 13,
     name: 'AutoCAD Design',
     category: 'civil',
-    duration: '2 months',
-    level: 'Beginner',
+    duration: '3 months',
+    level: 'Beginner to Advanced',
     description: 'Learn AutoCAD for architectural and civil engineering design.',
-    students: '1,100+'
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course on AutoCAD covering 2D, 3D design, and real-world engineering applications.',
+    curriculum: [
+      { module: 'AutoCAD Basics', topics: ['Basics', 'Commands'] },
+      { module: '2D Drafting', topics: ['Editing', 'Dimensioning'] },
+      { module: '3D Modeling', topics: ['Basics', 'Visualization'] },
+      { module: 'Layers', topics: ['Management', 'Blocks'] },
+      { module: 'Layouts', topics: ['Viewports', 'Printing'] },
+      { module: 'Advanced', topics: ['Tools', 'Efficiency'] },
+      { module: 'Architectural', topics: ['Architectural', 'Mechanical'] },
+      { module: 'Collaboration', topics: ['Management', 'Tools'] },
+      { module: 'Visualization', topics: ['Rendering', 'Advanced'] },
+      { module: 'Capstone', topics: ['Planning', 'Implementation'] }
+    ]
   },
   {
-    id: 14,
+    id: 13,
     name: 'Construction Planning',
     category: 'civil',
-    duration: '4 months',
-    level: 'Intermediate',
+    duration: '3 months',
+    level: 'Beginner to Advanced',
     description: 'Project management, scheduling, and construction techniques.',
-    students: '750+'
+    price: 2999,
+    originalPrice: 5999,
+    students: null,
+    overview: 'A comprehensive course on construction planning covering project management and modern techniques.',
+    curriculum: [
+      { module: 'Introduction', topics: ['Basics', 'Project Types'] },
+      { module: 'Project Management', topics: ['Principles', 'Scheduling'] },
+      { module: 'Cost Estimation', topics: ['Estimation', 'Budgeting'] },
+      { module: 'Resources', topics: ['Human Resources', 'Materials'] },
+      { module: 'Site Management', topics: ['Planning', 'Operations'] },
+      { module: 'Techniques', topics: ['Traditional', 'Modern'] },
+      { module: 'Risk Management', topics: ['Assessment', 'Safety'] },
+      { module: 'Monitoring', topics: ['Progress', 'Communication'] },
+      { module: 'Legal', topics: ['Laws', 'Contracts'] },
+      { module: 'Capstone', topics: ['Planning', 'Implementation'] }
+    ]
   }
 ];
 
@@ -147,7 +323,7 @@ export const COMPANIES = [
   { id: 2, name: 'TCS', logo: '🏭' },
   { id: 3, name: 'Microsoft', logo: '💠' },
   { id: 4, name: 'Deloitte', logo: '🏛️' },
-  { id: 5, name: 'Campegimi', logo: '🎓' },
+  { id: 5, name: 'Campgeimi', logo: '🎓' },
   { id: 6, name: 'Infosys', logo: '🌐' },
   { id: 7, name: 'Accenture', logo: '⭐' },
   { id: 8, name: 'IBM', logo: '🔷' }

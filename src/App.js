@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import About from './components/About';
 import Programs from './components/Programs';
+import SupportingTeam from './components/SupportingTeam';
 import Marquee from './components/Marquee';
 import Footer from './components/Footer';
 
 function App() {
-  const [showPrograms, setShowPrograms] = useState(false);
+  const [showPrograms, setShowPrograms] = useState(true);
 
   const handleExplore = () => {
     setShowPrograms(true);
@@ -32,7 +34,12 @@ function App() {
     } else if (section === 'advance') {
       alert('Advanced Programs section coming soon!');
     } else if (section === 'about') {
-      alert('About section coming soon!');
+      setTimeout(() => {
+        const aboutSection = document.querySelector('.about-section');
+        if (aboutSection) {
+          aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
     }
   };
 
@@ -40,7 +47,9 @@ function App() {
     <div className="App">
       <Header onNavigate={handleNavigation} />
       <Hero onExplore={handleExplore} />
+      <About />
       <Programs visible={showPrograms} />
+      <SupportingTeam />
       <Marquee />
       <Footer />
     </div>

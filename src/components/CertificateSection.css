@@ -1,0 +1,140 @@
+.certificate-section {
+  background: linear-gradient(135deg, rgba(26, 188, 156, 0.1), rgba(22, 160, 133, 0.1));
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-left: 4px solid #1abc9c;
+}
+
+.certificate-section h3 {
+  color: #1abc9c;
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.cert-subtitle {
+  color: #555;
+  font-size: 0.95rem;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.5;
+}
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.certificate-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ecf0f1;
+}
+
+.certificate-card:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 6px 16px rgba(26, 188, 156, 0.2);
+  border-color: #1abc9c;
+}
+
+.cert-image-container {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, #1abc9c, #16a085);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0.5rem;
+}
+
+.cert-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover .cert-image {
+  transform: scale(1.05);
+}
+
+.cert-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.cert-info h4 {
+  color: #2c3e50;
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+  height: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-info p {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certificate-section {
+    padding: 1.5rem;
+  }
+
+  .certificate-section h3 {
+    font-size: 1.25rem;
+  }
+
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .cert-image-container {
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificate-section {
+    padding: 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .certificate-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .cert-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .cert-image-container {
+    height: 120px;
+  }
+
+  .cert-info h4 {
+    font-size: 0.9rem;
+  }
+
+  .cert-info p {
+    font-size: 0.8rem;
+  }
+}
